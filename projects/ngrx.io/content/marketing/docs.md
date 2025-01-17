@@ -1,37 +1,50 @@
-<h1 class="no-toc">What is NgRx?</h1>
-
-NgRx is a framework for building reactive applications in Angular. NgRx provides libraries for:
-
-- Managing global and local state.
-- Isolation of side effects to promote a cleaner component architecture.
-- Entity collection management.
-- Integration with the Angular Router.
-- Developer tooling that enhances developer experience when building many different types of applications.
+* NgRx
+  * 👀== Angular's framework -- for -- building reactive applications 👀 /
+    * provides libraries for
+      * managing global & local state
+      * isolate side effects
+        * -> cleaner component architecture
+      * entity collection management
+      * -- integrate with -- Angular Router
+      * developer tooling / enhances developer experience | building MANY different types of applications
 
 ## Packages
 
-NgRx packages are divided into a few main categories
-
 ### State
 
-- [Store](guide/store) - RxJS powered global state management for Angular apps, inspired by Redux.
-- [Effects](guide/effects) - Side effect model for @ngrx/store.
-- [Router Store](guide/router-store) - Bindings to connect the Angular Router to @ngrx/store.
-- [Entity](guide/entity) - Entity State adapter for managing record collections.
-- [Signals](guide/signals) - Reactive store and set of utilities for Angular Signals.
-- [ComponentStore](guide/component-store) - Standalone library for managing local/component state.
-- [Operators](guide/operators) - Shared RxJS operators for NgRx libraries.
+- [Store](../guide/store)
+  - == RxJS powered global state management | Angular apps
+    - -- inspired by -- Redux
+- [Effects](../guide/effects)
+  - == side effect model -- for -- @ngrx/store
+- [Router Store](../guide/router-store) 
+  - == bindings / connect the Angular Router -- to -- @ngrx/store
+- [Entity](../guide/entity)
+  - == entity State adapter / manage record collections
+- [Signals](../guide/signals)
+  - == Reactive store + set of utilities | Angular Signals
+- [ComponentStore](../guide/component-store)
+  - == standalone library / manage local/component state
+- [Operators](../guide/operators) 
+  - == Shared RxJS operators -- for -- NgRx libraries
 
 ### Data
 
-- [Data](guide/data) - Extension for simplified entity data management.
+- [Data](../guide/data)
+  - == extension -- for -- simplified entity data management
 
 ### View
 
-- [Component](guide/component) - Extension for building reactive Angular templates.
+- [Component](../guide/component) 
+  - == extension -- for -- building reactive Angular templates
 
 ### Developer Tools
 
-- [Store Devtools](guide/store-devtools) - Instrumentation for @ngrx/store that enables visual tracking of state and time-travel debugging.
-- [Schematics](guide/schematics) - Scaffolding library for Angular applications using NgRx libraries.
-- [ESLint Plugin](guide/eslint-plugin) - ESLint rules to warn against bad practices. It also contains a few automatic fixes to enforce a consistent style, and to promote best practice.
+- [Store Devtools](../guide/store-devtools)
+  - == instrumentation for @ngrx/store / enables
+    - visual tracking of state
+    - time-travel debugging
+- [Schematics](../guide/schematics)
+  - == Scaffolding library for Angular applications -- via -- NgRx libraries
+- [ESLint Plugin](../guide/eslint-plugin) 
+  - == ESLint rules / warn against bad practices + automatic fixes

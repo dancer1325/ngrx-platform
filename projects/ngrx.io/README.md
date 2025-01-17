@@ -1,13 +1,14 @@
 # NgRx documentation project (https://ngrx.io)
 
-Everything in this folder is part of the documentation project. This includes
-
-- the web site for displaying the documentation
-- the dgeni configuration for converting source files to rendered files that can be viewed in the web site.
-- the tooling for setting up examples for development; and generating live-example and zip files from the examples.
+* goal
+  * web site documentation
+  * [dgeni](https://github.com/angular/dgeni) configuration / source files -- are converted to -- rendered files / can be viewed | web site
+  * tooling / set up examples for development
+  * generate live-example -- from -- zip files
 
 ## Developer tasks
 
+* TODO:
 We use [Yarn](https://yarnpkg.com) to manage the dependencies and to run build tasks.
 You should run all these tasks from the `projects/ngrx.io` folder.
 Here are the most important tasks you might need to use:
@@ -40,7 +41,7 @@ Here are the most important tasks you might need to use:
   - `yarn example-e2e --filter=foo` - limit e2e tests to those containing the word "foo"
   - `yarn example-e2e --setup --local` - run e2e tests with the local version of Angular contained in the "dist" folder
 
-## Developing on Windows
+## Developing | Windows
 
 It is necessary to run `yarn setup` and `yarn boilerplate:add` using Administrator rights as Linux-specific symlinks are used.
 
@@ -65,24 +66,16 @@ and loading it afterwards with `sudo docker load < <tar-name>.tar`.
 
 ## Guide to authoring
 
-There are two types of content in the documentation:
-
-- **API docs**: descriptions of the modules, classes, interfaces, decorators, etc that make up the Angular platform.
-  API docs are generated directly from the source code.
-  The source code is contained in TypeScript files, located in the `modules` folder.
-  Each API item may have a preceding comment, which contains JSDoc style tags and content.
-  The content is written in markdown.
-
-- **Other content**: guides, tutorials, and other marketing material.
-  All other content is written using markdown in text files, located in the `projects/ngrx.io/content` folder.
-  More specifically, there are sub-folders that contain particular types of content: guides, and marketing.
-
-- **Code examples**: code examples need to be testable to ensure their accuracy.
-  Also, our examples have a specific look and feel and allow the user to copy the source code. For larger
-  examples they are rendered in a tabbed interface (e.g. template, HTML, and TypeScript on separate
-  tabs).
-
-We use the [dgeni](https://github.com/angular/dgeni) tool to convert these files into docs that can be viewed in the doc-viewer.
+* types of content
+  * **API docs**
+    * == Angular platform's
+      * modules,
+      * classes,
+      * interfaces,
+      * decorators
+  * **Other content**
+    * guides, tutorials, other marketing material
+  * **Code examples**
 
 ### Generating the complete docs
 
